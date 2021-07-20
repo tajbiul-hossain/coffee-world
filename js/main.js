@@ -3,10 +3,13 @@ $(function () {
     var $scroll;
     $(window).scroll(function () {
         $scroll = $(window).scrollTop();
-        if ($scroll > 100) {
-            $(".navbar").css("background-color", "rgba(20, 2, 0, 0.8)");
-        } else {
-            $(".navbar").css("background-color", "rgba(0, 0, 0, 0)");
+        $width = $(window).width();
+        if ($width > 767) {
+            if ($scroll > 100) {
+                $(".navbar").css("background-color", "rgba(20, 2, 0, 0.8)");
+            } else {
+                $(".navbar").css("background-color", "rgba(0, 0, 0, 0)");
+            }
         }
     })
 
