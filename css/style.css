@@ -9,6 +9,10 @@
     --secondary-color: #b68834;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: 'Poppins', sans-serif;
     color: #777777;
@@ -20,7 +24,6 @@ body {
     position: relative;
     box-sizing: border-box;
     overflow-x: hidden;
-    scroll-behavior: smooth;
 }
 
 .offset:before {
@@ -444,6 +447,29 @@ h6 {
 .footer .social-icons i:hover {
     color: var(--secondary-color);
 }
+
+
+/*---------------------------
+        scroll top
+---------------------------*/
+#myBtn {
+    display: none;
+    position: fixed;
+    bottom: 50px;
+    right: 40px;
+    z-index: 99;
+    border: 2px solid #265077;
+    border-radius: 50%;
+    color: #265077;
+    padding: 15px;
+}
+
+#myBtn:hover {
+    color: #fff;
+    background: #265077;
+    cursor: pointer;
+}
+
 
 /*---------------------------
         media queries

@@ -1,11 +1,25 @@
 $(function () {
 
-    var $scroll;
+    // scroll top button
+    $("#myBtn").click(function () {
+        document.body.scrollTop = 0; // For Safari
+        document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+    })
+
+    // navigation color change && scroll top button popup
+    var scroll;
     $(window).scroll(function () {
-        $scroll = $(window).scrollTop();
-        $width = $(window).width();
-        if ($width > 767) {
-            if ($scroll > 100) {
+        scroll = $(window).scrollTop();
+        width = $(window).width();
+
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            $("#myBtn").css("display", "block");
+        } else {
+            $("#myBtn").css("display", "none");
+        }
+
+        if (width > 767) {
+            if (scroll > 100) {
                 $(".navbar").css("background-color", "rgba(20, 2, 0, 0.8)");
             } else {
                 $(".navbar").css("background-color", "rgba(0, 0, 0, 0)");
@@ -31,7 +45,6 @@ $(function () {
         // a poor man's stop video
         $("#video").attr('src', videoSrc);
     })
-
 
     //review counter
     $(".count").counterUp({
