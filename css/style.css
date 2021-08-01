@@ -85,7 +85,7 @@ h6 {
 .navbar {
     background-color: rgba(0, 0, 0, 0);
     padding: .8rem 0;
-    transition: all .2s ease-in-out;
+    transition: all .5s ease-in-out;
 }
 
 .navbar .navbar-nav .nav-link,
@@ -389,10 +389,6 @@ h6 {
     font-weight: 600;
 }
 
-.footer .fa-heart {
-    color: var(--secondary-color);
-}
-
 .footer .copyright {
     padding-top: 20px;
 }
@@ -458,15 +454,15 @@ h6 {
     bottom: 50px;
     right: 40px;
     z-index: 99;
-    border: 2px solid #265077;
+    border: 2px solid #b99670;
     border-radius: 50%;
-    color: #265077;
+    color: #b99670;
     padding: 15px;
 }
 
 #myBtn:hover {
     color: #fff;
-    background: #265077;
+    background: #b99670;
     cursor: pointer;
 }
 
